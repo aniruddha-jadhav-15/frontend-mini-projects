@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-color: #e3f8ff;
+  --second-color: #dcfafb;
+  --third-color: #ffe8df;
+  --accent-color: #ff5151;
+  --dark-color: #161616;
+  --body-font: "Open Sans";
+}
+
+h1 {
+  font-family: var(--body-font);
+  margin: 2rem 2rem;
+  font-size: 2rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1200px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cards {
+  position: relative;
+  padding: 3rem;
+  border-radius: 1rem;
+  background-color: var(--first-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+.cards:nth-child(2) {
+  background: var(--second-color);
+}
+.cards:nth-child(3) {
+  background: var(--third-color);
+}
+
+.cards .card-name {
+  position: absolute;
+  left: -25%;
+  top: 0;
+  width: 3rem;
+  height: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: center;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-weight: bold;
+  transition: 0.5s;
+  padding: 0 0.9rem;
+}
+.cards img {
+  width: 190px;
+  height: auto;
+  padding: 0 0.9rem;
+  transition: 0.5s;
+}
+
+.cards:hover {
+  box-shadow: 0 0.5rem 1rem #d1d9e6;
+}
+
+.cards:hover img {
+  transform: rotate(30deg);
+}
+
+.cards:hover .card-name {
+  left: 0;
+}
+.cards:hover .card-prices {
+  padding-left: 0.15rem;
+}
+.cards:hover .card-prices {
+  padding-left: 0.9rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.cards .card-prices {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: 0.5s;
+}
+
+.card-preci {
+  display: inline-block;
+  color: red;
+  margin-bottom: 0.3rem;
+}
+
+.card-preci-now {
+  display: block;
+}
+
+.card-prices i {
+  font-size: 1.5rem;
+}
+
+.card-prices i:hover {
+  color: red;
+}
