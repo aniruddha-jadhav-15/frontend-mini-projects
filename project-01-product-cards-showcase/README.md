@@ -6,7 +6,7 @@ A simple and clean **Product Cards Showcase** built using **HTML** and **CSS** t
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://your-live-link.com)
+[View Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-01-product-cards-showcase/)
 
 ---
 
@@ -41,7 +41,7 @@ product-cards-showcase/
 │── style.css
 │── img/
 │ ├── img1.png
-│ ├── img2.pmg
+│ ├── img2.png
 │ └── img3.png
 │ └── img4.png
 │ └── screenshot.png
