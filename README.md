@@ -9,6 +9,8 @@ This repo contains small but impactful projects to showcase my skills in **HTML,
 
 1. [Product Cards Showcase](./project-01-product-cards-showcase/) - Showcase of responsive product cards with hover effects
 
+2. [Pricing-Table](./project-02-Pricing-Table/) - Showcase of responsive pracing tables
+
 > Each project folder contains `index.html`, `style.css`, optionally `script.js`, and its own **README.md** with live demo links, screenshots, and features.
 
 ---
