@@ -7,7 +7,7 @@ It displays multiple pricing plans with gradients, hover transitions, and a clea
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-01-product-cards-showcase/)
+[View Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-02-Pricing-Table/)
 
 ---
 
