@@ -11,6 +11,8 @@ This repo contains small but impactful projects to showcase my skills in **HTML,
 
 2. [Pricing-Table](./project-02-Pricing-Table/) - Showcase of responsive pracing tables
 
+3. [Registration Form](./project-03-Registration-Form/) - Dance Competition Registration Form
+
 > Each project folder contains `index.html`, `style.css`, optionally `script.js`, and its own **README.md** with live demo links, screenshots, and features.
 
 ---

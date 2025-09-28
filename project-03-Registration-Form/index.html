@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dance Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="main">
+        <!-- Image -->
+        <div class="img-container">
+          <img
+            src="img/Dance Competition Poster.png"
+            alt="Dance Competition Poster" />
+        </div>
+
+        <div class="wrapper">
+          <!-- Form heading -->
+          <div class="heading-subheading">
+            <h1 class="title">Dance Registration</h1>
+            <p class="sub-title">
+              Fill the registration form below carefully to enter the dancing
+              competition.
+            </p>
+          </div>
+
+          <!-- Form -->
+          <form>
+            <!-- Name -->
+            <div class="input-container mtb">
+              <label>Name</label>
+              <div class="input-boxes">
+                <input
+                  type="text"
+                  placeholder="First name"
+                  class="input-small"
+                  required />
+                <input
+                  type="text"
+                  placeholder="Last name"
+                  class="input-small"
+                  required />
+              </div>
+            </div>
+
+            <!-- Email & Phone -->
+            <div class="input-container mtb">
+              <div class="labels-container">
+                <label for="email">E-mail</label>
+                <label for="phone" class="mrl">Phone Number</label>
+              </div>
+              <div class="input-boxes">
+                <input
+                  type="email"
+                  placeholder="example@example.com"
+                  id="email"
+                  class="input-small"
+                  required />
+                <input
+                  type="tel"
+                  placeholder="+91 0000000000"
+                  id="phone"
+                  class="input-small"
+                  required />
+              </div>
+            </div>
+
+            <!-- Gender -->
+            <div class="input-container mtb">
+              <label>Gender</label>
+              <div class="input-boxes">
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="male" /> Male
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="female" /> Female
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="gender" value="other" /> Other
+                </label>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="input-container mtb">
+              <label>Address</label>
+              <div class="input-large-box">
+                <input
+                  type="text"
+                  placeholder="Street Address"
+                  class="input-large"
+                  required />
+                <input
+                  type="text"
+                  placeholder="Street Address Line 2"
+                  class="input-large"
+                  required />
+              </div>
+              <div class="input-boxes mtb">
+                <input
+                  type="text"
+                  placeholder="City"
+                  class="input-small"
+                  required />
+                <input
+                  type="text"
+                  placeholder="State / Province"
+                  class="input-small"
+                  required />
+              </div>
+            </div>
+
+            <!-- Type of Dance -->
+            <div class="input-container mtb">
+              <label>Type of Dance</label>
+              <div class="input-boxes">
+                <label class="radio-label">
+                  <input type="radio" name="dance" value="salsa" /> Salsa
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="dance" value="tango" /> Tango
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="dance" value="club" /> Club
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="dance" value="hiphop" /> Hip Hop
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="dance" value="other" /> Other
+                </label>
+              </div>
+            </div>
+
+            <!-- Start Date & Time -->
+            <div class="input-container mtb">
+              <label>Start Day & Time</label>
+              <div class="date-time-box">
+                <input type="date" class="date-input" required />
+                <input type="time" class="date-input" required />
+                <select>
+                  <option value="am">AM</option>
+                  <option value="pm">PM</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Comment -->
+            <div class="input-container mtb">
+              <label for="comment">Comment</label>
+              <textarea
+                id="comment"
+                placeholder="Your message..."
+                required></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="btn-box">
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

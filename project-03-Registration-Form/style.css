@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #9fa7f6;
+}
+
+:root {
+  --primary-color: #fff;
+  --text-color: #2c3345;
+  --border: 1px solid #b8bdc9;
+  --btn-bg: #0a1551;
+}
+
+section {
+  max-width: 1200px;
+  width: 60%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+/* Wrapper */
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.mtb {
+  margin: 1rem 0;
+}
+
+/* Image */
+.img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Heading */
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
+.sub-title {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.4;
+}
+
+/* Labels */
+label {
+  font-size: 0.95rem;
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  display: block;
+  opacity: 0.8;
+}
+
+.labels-container {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Input Boxes */
+.input-boxes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.input-small {
+  flex: 1;
+  padding: 0.6rem;
+  border: var(--border);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.input-large-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-large {
+  width: 100%;
+  padding: 0.8rem;
+  border: var(--border);
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Radio Boxes */
+.input-radio-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.input-boxes {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  accent-color: #0a1551;
+}
+
+/* Date & Time */
+.date-time-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.date-input,
+select {
+  padding: 0.5rem;
+  border: var(--border);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.8rem;
+  border: var(--border);
+  border-radius: 5px;
+  resize: none;
+  font-size: 0.9rem;
+}
+
+/* Button */
+.btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--primary-color);
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #343c6a;
+}
+
+input:hover,
+textarea:hover {
+  outline: 2px solid #80b3e3;
+}
+
+input[type="radio"]:hover {
+  outline: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .input-boxes,
+  .date-time-box {
+    flex-direction: column;
+  }
+}
