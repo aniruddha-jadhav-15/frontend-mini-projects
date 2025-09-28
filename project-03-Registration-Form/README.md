@@ -7,7 +7,7 @@ This form is designed to collect participant details like name, email, phone num
 
 ## 🚀 Live Demo
 
-[View Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-02-Pricing-Table/)
+[View Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-03-Registration-Form/)
 
 ---
 
