@@ -17,68 +17,73 @@
     <!-- header / hero section -->
 
     <section class="hero">
-      <!-- header -->
-      <header class="warp">
-        <nav class="nav-bar">
-          <ul class="list">
-            <li class="list-items"><a href="#">HOME</a></li>
-            <li class="list-items"><a href="#">MENU</a></li>
-            <li class="list-items"><a href="#">CHEFS</a></li>
-            <li class="list-items"><a href="#">ABOUT</a></li>
-            <li class="list-items"><a href="#">CONTACT</a></li>
-          </ul>
-          <div class="logo">LOGO</div>
-          <div class="btn-container">
-            <a href="#" class="btn">book table</a>
-          </div>
-        </nav>
-      </header>
+      <div class="hero-container">
+        <!-- header -->
+        <header class="warp">
+          <nav class="nav-bar">
+            <ul class="list">
+              <li class="list-items"><a href="#">HOME</a></li>
+              <li class="list-items"><a href="#">MENU</a></li>
+              <li class="list-items"><a href="#">CHEFS</a></li>
+              <li class="list-items"><a href="#">ABOUT</a></li>
+              <li class="list-items"><a href="#">CONTACT</a></li>
+            </ul>
 
-      <!-- Heding -->
+            <div class="icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="logo"><a href="#">LOGO</a></div>
 
-      <div class="heding-container warp">
-        <h1 class="hero-heding">GOOD TIMES GREATE TASTE</h1>
-      </div>
+            <div class="btn-container">
+              <a href="#" class="btn">book table</a>
+            </div>
+          </nav>
+        </header>
 
-      <!-- Address -->
-      <div class="address-container warp">
-        <div class="text">
-          <span class="small-txt">/ FIND US</span>
-          <p>71 Madisa Eve, NEW YORK,</p>
-          <p>NY 100021, 1682391270.</p>
+        <!-- Heding -->
+
+        <div class="heding-container warp">
+          <h1 class="hero-heding">GOOD TIMES GREATE TASTE</h1>
         </div>
 
-        <div class="compont">
-          <div class="circle">
-            <svg viewBox="0 0 200 200" width="200" height="200">
-              <defs>
-                <path
-                  id="circlePath"
-                  d="M 100, 100
+        <!-- Address -->
+        <div class="address-container warp">
+          <div class="text">
+            <span class="small-txt">/ FIND US</span>
+            <p>71 Madisa Eve, NEW YORK,</p>
+            <p>NY 100021, 1682391270.</p>
+          </div>
+
+          <div class="compont">
+            <div class="circle">
+              <svg viewBox="0 0 200 200" width="200" height="200">
+                <defs>
+                  <path
+                    id="circlePath"
+                    d="M 100, 100
                m -80, 0
                a 80,80 0 1,1 160,0
                a 80,80 0 1,1 -160,0" />
-              </defs>
+                </defs>
 
-              <!-- Text around the circle -->
-              <text
-                font-size="19"
-                fill="white"
-                font-wigth="200"
-                font-family="Arial, sans-serif "
-                letter-spacing="4">
-                <textPath
-                  href="#circlePath"
-                  startOffset="50%"
-                  text-anchor="middle">
-                  Reserve Your Table Reserve Your Table Reserve
-                </textPath>
-              </text>
-            </svg>
+                <!-- Text around the circle -->
+                <text
+                  font-size="19"
+                  fill="white"
+                  font-wigth="200"
+                  font-family="Arial, sans-serif "
+                  letter-spacing="4">
+                  <textPath
+                    href="#circlePath"
+                    startOffset="50%"
+                    text-anchor="middle">
+                    Reserve Your Table Reserve Your Table Reserve
+                  </textPath>
+                </text>
+              </svg>
 
-            <a href="#" target="_blank" class="center-icon">
-              <img src="./imges/Vector.svg" alt="Vector" />
-            </a>
+              <a href="#" target="_blank" class="center-icon">
+                <img src="./imges/Vector.svg" alt="Vector" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -87,57 +92,61 @@
     <!-- About us -->
 
     <section class="about">
-      <!-- Title Decrption -->
-      <div class="title-dec-container warp">
-        <div><img src="imges/namste.png" alt="namste" /></div>
-        <h2 class="sec-title">Fidalgo is for everyone who</h2>
-        <p class="sec-decpration">
+      <!-- heding -->
+      <div class="about-heding-container warp">
+        <img src="imges/namste.png" alt="" />
+        <h2 class="about-heding">Fidalgo is for everyone who</h2>
+        <p class="about-subheding">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor ut enim ad minim veniam, quis nostrud
         </p>
+
         <h5>For the best memories</h5>
       </div>
 
-      <!-- Golase History -->
-      <div class="goales-history-container warp">
+      <div class="cuisine-container about-imges warp">
         <div class="img-container">
-          <img src="imges/about-1.png" alt="about-img" />
-          <img src="imges/about-2.png" class="sec-img" alt="" />
+          <img src="imges/about-1.png" alt="" />
+
+          <img src="imges/about-2.png" id="sec-img" alt="" />
         </div>
+
         <div class="txt-container">
-          <h3 class="about-title">CUISINE</h3>
-          <h5>OUR GOALS & HISTORY</h5>
-          <p class="about-dec">
+          <h3 class="img-title">CUISINE</h3>
+          <h3 class="img-sub-title">OUR GOALS & HISTORY</h3>
+          <div class="img-dec">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labo et dolore magna aliqua. Ut enim ad
             mini veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea.
-          </p>
+          </div>
 
-          <div class="btn-container">
+          <div class="btn-container about-btn">
             <a href="#" class="btn">book table</a>
           </div>
         </div>
       </div>
 
-      <div class="chffes-container warp">
-        <div class="img-container">
-          <img src="imges/about-3.png" alt="about-img" />
-          <img src="imges/about-4.png" class="fourth-img" alt="" />
-        </div>
+      <div class="chefs-container about-imges warp">
         <div class="txt-container">
-          <h3 class="about-title">CHEF’S</h3>
-          <h5>ONLY THE FINEST FOOD & GREAT SERVICE</h5>
-          <p class="about-dec">
+          <h3 class="img-title">CUISINE</h3>
+          <h3 class="img-sub-title">OUR GOALS & HISTORY</h3>
+          <div class="img-dec">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labo et dolore magna aliqua. Ut enim ad
             mini veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea.
-          </p>
+          </div>
 
-          <div class="btn-container">
+          <div class="btn-container about-btn">
             <a href="#" class="btn">book table</a>
           </div>
+        </div>
+
+        <div class="img-container">
+          <img src="imges/about-3.png" alt="" />
+
+          <img src="imges/about-4.png" id="forth-img" alt="" />
         </div>
       </div>
     </section>
