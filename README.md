@@ -13,6 +13,8 @@ This repo contains small but impactful projects to showcase my skills in **HTML,
 
 3. [Registration Form](./project-03-Registration-Form/) - Dance Competition Registration Form
 
+4. [Restaurant Landing Page](./project-04-Restaurant-Landing-page/) - Restaurant Landing Page
+
 > Each project folder contains `index.html`, `style.css`, optionally `script.js`, and its own **README.md** with live demo links, screenshots, and features.
 
 ---
