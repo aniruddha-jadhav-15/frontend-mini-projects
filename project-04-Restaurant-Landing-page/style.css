@@ -290,6 +290,14 @@ svg {
   font-size: 2rem;
   font-weight: 400;
   margin: 0.4rem 0;
+  text-align: center;
+}
+
+.about .about-subheding {
+  max-width: 100%;
+}
+.about-heding-container h5 {
+  margin-bottom: 1rem;
 }
 
 .about .about-subheding {
@@ -855,6 +863,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    margin-top: 2rem;
   }
 
   .chefs-container {
@@ -915,9 +924,13 @@ footer {
 }
 
 @media (max-width: 567px) {
+  .warp {
+    padding: 0 1rem;
+  }
   .hero-container {
     background-image: url(./imges/mobile.jpg);
     background-position: center;
+    height: 85vh;
   }
   .address-container {
   }
@@ -933,8 +946,19 @@ footer {
     width: 20vw;
   }
   .btn {
-    padding: 0.95rem 1.2rem;
+    padding: 0.85rem 1rem;
     font-size: 0.9rem;
+  }
+  .logo a {
+    font-size: 1.5rem;
+  }
+
+  .nav-bar {
+    height: 5.5rem;
+  }
+
+  .nav-bar .icon {
+    font-size: 1.85rem;
   }
   .email-warper {
     flex-direction: column;
