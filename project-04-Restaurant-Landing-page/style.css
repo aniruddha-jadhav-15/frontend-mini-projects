@@ -863,7 +863,7 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .chefs-container {
@@ -930,16 +930,21 @@ footer {
   .hero-container {
     background-image: url(./imges/mobile.jpg);
     background-position: center;
-    height: 85vh;
+    height: 70vh;
   }
-  .address-container {
-  }
+
   .about .img-dec {
     max-width: 100%;
   }
 
   .about .img-container {
     width: 80%;
+  }
+  .about .about-subheding {
+    max-width: 100%;
+  }
+  .about .img-sub-title {
+    text-align: center;
   }
 
   .circle {
