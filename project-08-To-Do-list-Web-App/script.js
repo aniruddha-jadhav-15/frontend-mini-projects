@@ -1,30 +1,48 @@
-let addTaskBtn = document.querySelector("#task-add");
-let list = document.querySelector(".list");
-let input = document.querySelector("input");
+const addTaskBtn = document.querySelector("#task-add");
+const list = document.querySelector(".list");
+const input = document.querySelector("input");
+const alertContainer = document.querySelector(".alert-container");
 
-function createElm(params) {
-  if (input.value === "") {
-    alert("Enter a Value");
+addTaskBtn.addEventListener("click", createElm);
+
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    createElm();
+  }
+});
+
+function createElm() {
+  if (input.value.trim() === "") {
+    alertContainer.classList.add("active");
+
+    setTimeout(() => {
+      alertContainer.classList.remove("active");
+    }, 2000);
   } else {
-    let li = document.createElement("li");
-    li.innerHTML = `${input.value} <i class="fa-solid fa-trash"></i>`;
+    const li = document.createElement("li");
+    li.innerText = input.value;
+
+    const icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-trash");
+
+    li.append(icon);
     list.appendChild(li);
 
     input.value = "";
+    input.focus();
 
-    // completed
-    li.addEventListener("dblclick", complet);
+    // completeTask
+    li.addEventListener("click", completeTask);
 
     // Delete
     let deleteIcon = li.querySelector("i");
-    deleteIcon.addEventListener("click", function () {
+    deleteIcon.addEventListener("click", function (e) {
+      e.stopPropagation();
       li.remove();
     });
   }
 }
 
-function complet(e) {
-  e.target.classList.toggle("completed");
+function completeTask(e) {
+  e.currentTarget.classList.toggle("completed");
 }
-
-addTaskBtn.addEventListener("click", createElm);
