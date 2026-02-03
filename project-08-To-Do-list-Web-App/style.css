@@ -1,140 +1,145 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "sans-serif";
+  font-family: "Inter", sans-serif;
 }
 
 :root {
   --bg-color: #ebeef3;
   --txt-color: #495969;
   --txt-light-color: #797d80;
-  --white-color: #ffff;
+  --white-color: #ffffff;
 }
 
 body {
-  background: #b0b0b16b;
-}
-
-li {
-  list-style: lower-roman;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #cfd9df, #e2ebf0);
 }
 
 .main {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  align-items: flex-start;
+  padding: 1rem;
 }
 
 .to-do-container {
-  padding: 1rem;
+  width: 100%;
+  max-width: 420px;
   background: var(--bg-color);
-  border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px 0px;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px;
+  overflow: hidden; /* IMPORTANT */
 }
 
 .heding {
-  margin: 0.7rem 0;
   display: flex;
   align-items: center;
-  padding: 1rem 2.1rem;
-  gap: 1.5rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
 .heding .bell {
   background: var(--txt-color);
-  padding: 1.1rem 0.6rem;
-  border-radius: 45%;
+  padding: 0.7rem;
+  border-radius: 50%;
 }
 
 .heding .bell i {
   color: var(--white-color);
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 .heding h1 {
   color: var(--txt-color);
-  font-weight: 700;
+  font-size: 1.5rem;
 }
 
 .input-container {
-  padding: 1rem 1.7rem;
-  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1rem;
 }
 
 .input-container input {
-  width: 100%;
-  padding: 0.5rem 1rem;
-  display: inline-block;
-  font-size: 1.2rem;
-  border-radius: 5px;
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
   border: none;
-  font-weight: 500;
-  color: var(--txt-light-color);
   background: var(--bg-color);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 8px 30px 0px;
+  box-shadow: rgba(100, 100, 111, 0.15) 0px 4px 12px;
 }
 
 .input-container i {
-  padding: 0.7rem 0.2rem;
-  position: absolute;
-  right: 12%;
-  bottom: 18%;
-  font-size: 1.3rem;
-  color: var(--txt-color);
-  font-weight: 600;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--txt-color);
+  color: white;
+  border-radius: 6px;
   cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.input-container i:hover {
+  background: #2f3b48;
+  transform: scale(1.05);
+}
+
+.input-container input:focus {
+  outline: 2px solid var(--txt-color);
 }
 
 .list {
-  padding: 0rem 1.7rem;
-  position: relative;
+  padding: 0.5rem 1rem 1rem;
 }
 
 .list li {
-  padding: 0.6rem 0.9rem;
-  background: var(--bg-color);
-  margin: 1rem 0;
-  border-radius: 25px;
-  font-size: 1.3rem;
+  list-style: none;
+  margin: 0.7rem 0;
+  padding: 0.6rem 1rem;
+  background: #e2e6e9;
+  border-radius: 20px;
+  font-size: 1.05rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  background-color: #e2e6e9;
+  align-items: center;
   cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.list li:hover {
+  background: #d6dbe0;
 }
 
 .completed {
   text-decoration: line-through;
   color: gray;
-  background-color: #dcdcdc;
-  transition: all 0.3s ease;
+  background: #dcdcdc;
 }
 
 .alert-container {
   position: fixed;
   bottom: 20px;
-  right: -300px;
-
+  right: -320px;
   min-width: 240px;
   padding: 12px 16px;
-
-  background-color: #ffdddd;
+  background: #ffdddd;
   color: #7a1f1f;
-
-  font-size: 16px;
-  font-weight: 500;
-
   border-left: 5px solid #ff4d4d;
   border-radius: 8px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 20px;
   transition: right 0.4s ease;
   z-index: 1000;
@@ -142,4 +147,18 @@ li {
 
 .alert-container.active {
   right: 20px;
+}
+
+@media (max-width: 480px) {
+  .to-do-container {
+    max-width: 100%;
+  }
+
+  .heding h1 {
+    font-size: 1.3rem;
+  }
+
+  .list li {
+    font-size: 1rem;
+  }
 }
