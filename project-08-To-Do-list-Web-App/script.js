@@ -3,46 +3,102 @@ const list = document.querySelector(".list");
 const input = document.querySelector("input");
 const alertContainer = document.querySelector(".alert-container");
 
-addTaskBtn.addEventListener("click", createElm);
+let todos = [];
 
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    createElm();
+// save todo in array
+function saveTodo() {
+  const todoTask = {
+    text: input.value,
+    completed: false,
+  };
+  todos.push(todoTask);
+}
+
+// render todos on screen
+function renderTodos() {
+  list.innerHTML = "";
+
+  todos.forEach((todo, index) => {
+    const li = document.createElement("li");
+    li.innerText = todo.text;
+
+    // show completed state
+    if (todo.completed) {
+      li.classList.add("completed");
+    }
+
+    // delete icon
+    const icon = document.createElement("i");
+    icon.classList.add("fa-solid", "fa-trash");
+    li.append(icon);
+
+    list.appendChild(li);
+
+    // complete task
+    li.addEventListener("click", () => {
+      todos[index].completed = !todos[index].completed;
+      saveToLocal();
+      renderTodos();
+    });
+
+    // delete task
+    icon.addEventListener("click", (e) => {
+      e.stopPropagation();
+      todos.splice(index, 1);
+      saveToLocal();
+      renderTodos();
+    });
+  });
+}
+
+// add task
+addTaskBtn.addEventListener("click", () => {
+  if (input.value.trim() === "") {
+    emptyTodo();
+  } else {
+    saveTodo();
+    saveToLocal();
+    renderTodos();
+    input.value = "";
+    input.focus();
   }
 });
 
-function createElm() {
-  if (input.value.trim() === "") {
-    alertContainer.classList.add("active");
+// enter key
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    if (input.value.trim() === "") {
+      emptyTodo();
+    } else {
+      saveTodo();
+      saveToLocal();
+      renderTodos();
+      input.value = "";
+      input.focus();
+    }
+  }
+});
 
-    setTimeout(() => {
-      alertContainer.classList.remove("active");
-    }, 2000);
-  } else {
-    const li = document.createElement("li");
-    li.innerText = input.value;
+// Empty Todos
+function emptyTodo() {
+  alertContainer.classList.add("active");
 
-    const icon = document.createElement("i");
-    icon.classList.add("fa-solid", "fa-trash");
+  setTimeout(() => {
+    alertContainer.classList.remove("active");
+  }, 2000);
+}
 
-    li.append(icon);
-    list.appendChild(li);
+function saveToLocal() {
+  localStorage.setItem("todos", JSON.stringify(todos));
+}
 
-    input.value = "";
-    input.focus();
+function loadFromLocal() {
+  const data = localStorage.getItem("todos");
 
-    // completeTask
-    li.addEventListener("click", completeTask);
-
-    // Delete
-    let deleteIcon = li.querySelector("i");
-    deleteIcon.addEventListener("click", function (e) {
-      e.stopPropagation();
-      li.remove();
-    });
+  if (data) {
+    todos = JSON.parse(data);
+    renderTodos();
   }
 }
 
-function completeTask(e) {
-  e.currentTarget.classList.toggle("completed");
-}
+loadFromLocal();
