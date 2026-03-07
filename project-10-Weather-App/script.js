@@ -18,13 +18,14 @@ async function getWeather() {
   const apiKey = "6a527e9d74693cb608278bea3b474e34";
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 
+  weatherDiv.innerHTML = "";
   showMessage("Loading...", "loading");
 
   try {
     const response = await fetch(url);
     const data = await response.json();
 
-    if (response.status === 404) {
+    if (data.cod === "404") {
       throw new Error("City not found ❌");
     }
 
@@ -40,7 +41,10 @@ async function getWeather() {
 
 function displayWeather(data) {
   const icon = data.weather[0].icon;
-  const description = data.weather[0].description;
+  const description = data.weather[0].description
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
 
   weatherDiv.innerHTML = `
     <article class="weather-card">
