@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,7 +13,17 @@
     <input type="color" id="colorPicker" value="#3498db" />
 
     <!-- Color Display Box -->
-    <div class="swatch" id="colorSwatch">#3498db</div>
+    <div class="swatch">
+      <div id="colorSwatch">#3498db</div>
+      <div class="container">
+        <select class="select-color" id="colorFormat">
+          <option value="hex">HEX</option>
+          <option value="rgb">RGB</option>
+          <option value="hsl">HSL</option>
+        </select>
+        <button class="btn" id="copyBtn">Copy Color</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
