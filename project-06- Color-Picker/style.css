@@ -43,10 +43,26 @@ input[type="color"]:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   font-weight: bold;
   font-size: 20px;
   color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.5s, color 0.5s;
+  transition:
+    background-color 0.5s,
+    color 0.5s;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  margin-top: 10px;
+}
+.select-color,
+.btn {
+  padding: 7px 14px;
+  outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: top 5px;
+  font-size: 0.9rem;
 }
