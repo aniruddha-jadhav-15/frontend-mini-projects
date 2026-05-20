@@ -52,7 +52,17 @@ function renderTodos() {
 }
 
 // add task
-addTaskBtn.addEventListener("click", () => {
+addTaskBtn.addEventListener("click", handleAddTask);
+
+// enter key
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    handleAddTask();
+  }
+});
+
+// handle add task — checks empty input, saves and renders todo
+function handleAddTask() {
   if (input.value.trim() === "") {
     emptyTodo();
   } else {
@@ -62,22 +72,7 @@ addTaskBtn.addEventListener("click", () => {
     input.value = "";
     input.focus();
   }
-});
-
-// enter key
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    if (input.value.trim() === "") {
-      emptyTodo();
-    } else {
-      saveTodo();
-      saveToLocal();
-      renderTodos();
-      input.value = "";
-      input.focus();
-    }
-  }
-});
+}
 
 // Empty Todos
 function emptyTodo() {
