@@ -1,14 +1,14 @@
-# Product Cards Showcase
+# Color Picker
 
-A responsive product cards showcase UI built using HTML and CSS.
+A responsive color picker application built using HTML, CSS, and JavaScript.
 
-This project focuses on creating clean and modern product card layouts with responsive design principles and structured frontend styling.
+This project demonstrates JavaScript event handling and dynamic color generation with an interactive user interface.
 
 ---
 
 ## 🚀 Live Demo
 
-[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-01-product-cards-showcase/)
+[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-06-%20Color-Picker/)
 
 ---
 
@@ -20,11 +20,11 @@ This project focuses on creating clean and modern product card layouts with resp
 
 ## ✨ Features
 
-- Responsive card layout
-- Modern UI design
-- Hover effects
-- Clean typography
-- Organized structure
+- Dynamic color generation
+- Interactive UI
+- Responsive design
+- Real-time color updates
+- Clean layout structure
 
 ---
 
@@ -32,17 +32,19 @@ This project focuses on creating clean and modern product card layouts with resp
 
 - HTML5
 - CSS3
+- JavaScript
 
 ---
 
 ## 📁 Folder Structure
 
 ```bash
-project-01-product-cards-showcase/
+project-06-Color-Picker/
 │
-├── images/
+├── img/
 ├── index.html
 ├── style.css
+├── script.js
 └── README.md
 ```
 
@@ -66,9 +68,10 @@ git clone https://github.com/aniruddha-jadhav-15/frontend-mini-projects.git
 
 ## 📌 Future Improvements
 
+- Add hex copy feature
+- Add color palette generation
 - Improve responsiveness
-- Add JavaScript interactions
-- Enhance UI design
+- Enhance animations
 
 ---
 

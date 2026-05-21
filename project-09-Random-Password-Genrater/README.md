@@ -1,14 +1,14 @@
-# Pricing Table
+# Random Password Generator
 
-A clean and responsive pricing table component built using HTML and CSS.
+A responsive password generator application built using HTML, CSS, and JavaScript.
 
-This project demonstrates responsive layout design, pricing section structure, and modern frontend UI styling.
+This project demonstrates JavaScript logic, random password generation, and interactive UI functionality.
 
 ---
 
 ## 🚀 Live Demo
 
-[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-02-Pricing-Table/)
+[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-09-Random-Password-Genrater/)
 
 ---
 
@@ -20,11 +20,11 @@ This project demonstrates responsive layout design, pricing section structure, a
 
 ## ✨ Features
 
-- Responsive pricing cards
-- Modern UI layout
+- Generate random passwords
+- Interactive UI
+- Responsive layout
 - Clean design structure
-- Hover interactions
-- Organized styling
+- One-click password generation
 
 ---
 
@@ -32,16 +32,18 @@ This project demonstrates responsive layout design, pricing section structure, a
 
 - HTML5
 - CSS3
+- JavaScript
 
 ---
 
 ## 📁 Folder Structure
 
 ```bash
-project-02-Pricing-Table/
+project-09-Random-Password-Genrater/
 │
 ├── index.html
 ├── style.css
+├── script.js
 ├── preview.png
 └── README.md
 ```
@@ -66,10 +68,10 @@ git clone https://github.com/aniruddha-jadhav-15/frontend-mini-projects.git
 
 ## 📌 Future Improvements
 
-- Add pricing toggle
-- Improve responsiveness
-- Enhance animations
-- Add accessibility improvements
+- Add password strength indicator
+- Add copy-to-clipboard feature
+- Improve UI animations
+- Add custom password settings
 
 ---
 

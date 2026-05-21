@@ -1,30 +1,30 @@
-# Product Cards Showcase
+# Restaurant Landing Page
 
-A responsive product cards showcase UI built using HTML and CSS.
+A responsive restaurant landing page built using HTML and CSS.
 
-This project focuses on creating clean and modern product card layouts with responsive design principles and structured frontend styling.
+This project focuses on creating a modern restaurant website layout with clean UI sections, responsive design, and visually appealing styling.
 
 ---
 
 ## 🚀 Live Demo
 
-[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-01-product-cards-showcase/)
+[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-04-Restaurant-Landing-page/)
 
 ---
 
 ## 📸 Preview
 
-![Project Preview](./img/preview.png)
+![Project Preview](./imges/preview.png)
 
 ---
 
 ## ✨ Features
 
-- Responsive card layout
-- Modern UI design
-- Hover effects
+- Responsive landing page
+- Hero section design
+- Modern UI layout
 - Clean typography
-- Organized structure
+- Organized page structure
 
 ---
 
@@ -38,7 +38,7 @@ This project focuses on creating clean and modern product card layouts with resp
 ## 📁 Folder Structure
 
 ```bash
-project-01-product-cards-showcase/
+project-04-Restaurant-Landing-page/
 │
 ├── images/
 ├── index.html
@@ -67,8 +67,8 @@ git clone https://github.com/aniruddha-jadhav-15/frontend-mini-projects.git
 ## 📌 Future Improvements
 
 - Improve responsiveness
-- Add JavaScript interactions
-- Enhance UI design
+- Add menu interactions
+- Enhance UI sections
 
 ---
 

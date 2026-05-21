@@ -1,44 +1,89 @@
 # 🚀 Frontend Mini Projects
 
-Welcome to my **Frontend Mini Projects** repository!  
-This repo contains small but impactful projects to showcase my skills in **HTML, CSS, and JavaScript**. Each project is designed to strengthen my frontend fundamentals and demonstrate practical implementations.
+A collection of frontend mini projects built while learning and practicing frontend development.
+
+This repository contains responsive UI designs and interactive JavaScript projects created to improve real-world frontend development skills.
 
 ---
 
-## 📂 Projects List
+## 🎨 HTML & CSS Projects
 
-1. [Product Cards Showcase](./project-01-product-cards-showcase/) - Showcase of responsive product cards with hover effects
+### 01. Product Cards Showcase
 
-2. [Pricing-Table](./project-02-Pricing-Table/) - Showcase of responsive pracing tables
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-01-product-cards-showcase/)
 
-3. [Registration Form](./project-03-Registration-Form/) - Dance Competition Registration Form
+### 02. Pricing Table
 
-4. [Restaurant Landing Page](./project-04-Restaurant-Landing-page/) - Restaurant Landing Page
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-02-Pricing-Table/)
 
-> Each project folder contains `index.html`, `style.css`, optionally `script.js`, and its own **README.md** with live demo links, screenshots, and features.
+### 03. Registration Form
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-03-Registration-Form/)
+
+### 04. Restaurant Landing Page
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-04-Restaurant-Landing-page/)
+
+---
+
+## ⚡ JavaScript Projects
+
+### 05. Calculator
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-05-Calculator/)
+
+### 06. Color Picker
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-06-%20Color-Picker/)
+
+### 07. Counter App
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-07-Counter-App/)
+
+### 08. To-Do List Web App
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-08-To-Do-list-Web-App/)
+
+### 09. Random Password Generator
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-09-Random-Password-Genrater/)
+
+### 10. Weather App
+
+🔗 [Live Demo](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-10-Weather-App/)
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **HTML5** - Semantic markup and structure
-- **CSS3** - Flexbox, Grid, Animations, Responsive Design
-- **JavaScript (ES6+)** - DOM manipulation, events, APIs
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub
 
 ---
 
-## ⚡ Features of the Repo
+## 🎯 Purpose
 
-- Clean folder structure
-- Projects categorized by type and functionality
-- Fully responsive design for all projects
-- Each project has its own README with demo link and screenshots
+These projects were built to improve:
+
+- frontend fundamentals
+- responsive design
+- JavaScript logic
+- UI development skills
 
 ---
 
-## 📌 How to Run
+## 📥 Clone Repository
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/aniruddha-jadhav-15/frontend-mini-projects.git
-   ```
+```bash
+git clone https://github.com/aniruddha-jadhav-15/frontend-mini-projects.git
+```
+
+---
+
+## 👨‍💻 Author
+
+Aniruddha Jadhav
+
+Frontend Developer & Continuous Learner

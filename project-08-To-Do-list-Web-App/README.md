@@ -1,14 +1,14 @@
-# Product Cards Showcase
+# To-Do List Web App
 
-A responsive product cards showcase UI built using HTML and CSS.
+A responsive To-Do List application built using HTML, CSS, and JavaScript.
 
-This project focuses on creating clean and modern product card layouts with responsive design principles and structured frontend styling.
+This project focuses on task management functionality, DOM manipulation, and interactive frontend development concepts.
 
 ---
 
 ## 🚀 Live Demo
 
-[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-01-product-cards-showcase/)
+[View Project](https://aniruddha-jadhav-15.github.io/frontend-mini-projects/project-08-To-Do-list-Web-App/)
 
 ---
 
@@ -20,11 +20,11 @@ This project focuses on creating clean and modern product card layouts with resp
 
 ## ✨ Features
 
-- Responsive card layout
-- Modern UI design
-- Hover effects
-- Clean typography
-- Organized structure
+- Add tasks
+- Delete tasks
+- Mark tasks as completed
+- Interactive UI
+- Responsive design
 
 ---
 
@@ -32,17 +32,19 @@ This project focuses on creating clean and modern product card layouts with resp
 
 - HTML5
 - CSS3
+- JavaScript
 
 ---
 
 ## 📁 Folder Structure
 
 ```bash
-project-01-product-cards-showcase/
+project-08-To-Do-list-Web-App/
 │
-├── images/
+├── img/
 ├── index.html
 ├── style.css
+├── script.js
 └── README.md
 ```
 
@@ -66,9 +68,10 @@ git clone https://github.com/aniruddha-jadhav-15/frontend-mini-projects.git
 
 ## 📌 Future Improvements
 
-- Improve responsiveness
-- Add JavaScript interactions
-- Enhance UI design
+- Add local storage support
+- Add task filtering
+- Improve animations
+- Add dark mode
 
 ---
 
